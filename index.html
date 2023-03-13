@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Лабораторна робота №2 Мілька</title>
+    <link href="style.css" type="text/css" rel="stylesheet" />
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <img id="images" src="images/0.jpg" alt="img" />
+    <div id="conteiner">
+      <button type="submit" onclick="changeImage()">Змінити фото</button>
+
+      <p>
+        Ширина:
+        <input
+          id="height"
+          type="range"
+          min="0"
+          max="1200"
+          step="50"
+          value="600"
+          oninput="changeHeight()"
+        />
+      </p>
+      <p>
+        Довжина:
+        <input
+          id="width"
+          type="range"
+          min="0"
+          max="1600"
+          step="50"
+          value="800"
+          oninput="changeWidth()"
+        />
+      </p>
+      <p>
+        Товщина рамки:
+        <input
+          id="border"
+          type="range"
+          min="0"
+          max="10"
+          step="1"
+          value="0"
+          oninput="changeBorder()"
+        />
+      </p>
+
+      <input
+        id="new_alt"
+        type="text"
+        placeholder="Новий альтернативний текст"
+        name="name"
+      />
+      <button type="submit" onclick="applied()">Новий alt</button>
+    </div>
+  </body>
+</html>
